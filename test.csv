@@ -1,0 +1,28 @@
+Table Name,Table Comment,Table Column Name,Table Column Datatype,Table Column Comment,Table Column Is PK,Table Column Is FK
+CheDui,,cheduibianhao,INTEGER,,Yes,No
+,,cheduiming,VARCHAR(20),,No,
+,,beizhuxinxi,,,,
+,,duizhang,INTEGER,,,Yes
+CheLiang,,chepaihao,VARCHAR(20),,Yes,No
+,,zuoshu,INTEGER,,No,
+,,beizhuxinxi,VARCHAR(20),,,
+,,xianlu,INTEGER,,,Yes
+DuiZhang,队长,gonghao,,,Yes,
+LuDuiZhang,,,,,,
+RenYuan,,,,,,No
+,,xingming,VARCHAR(20),,No,
+,,xingbie,"ENUM('男', '女')",,,
+,,zhiwei,"ENUM('司机', '路队长', '队长')",,,
+SiJi,,gonghao,INTEGER,,Yes,Yes
+,,xianlu,,,No,
+WeiZhang,,ID,,,Yes,No
+,,zhandian,VARCHAR(20),,No,
+,,shijian,DATETIME,,,
+,,weizhangleixin,"ENUM('闯红灯','未礼让斑马线','压线','违章停车')",,,
+,,cheliang,VARCHAR(20),,,Yes
+,,siji,INTEGER,,,
+XianLu,,xianlubianhao,,,Yes,No
+,,xianluming,VARCHAR(20),,No,
+,,beizhuxinxi,VARCHAR(100),,,
+,,chedui,INTEGER,,,Yes
+,,duizhang,,,,
