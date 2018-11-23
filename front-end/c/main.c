@@ -62,8 +62,6 @@ void execute_sql(MYSQL* con, const char* sql_statements) {
 
   if (result != NULL) {
     print_result(result);
-  } else {
-    printf("result is NULL\n");
   }
   mysql_free_result(result);
 }
