@@ -1,4 +1,9 @@
 ## 公交安全管理系统
+* **GitHub**: <https://github.com/wsxq2/BusSecurityManagement>
+* **Web前端**: <http://wsxq21.55555.io/> (用户名为：admin，密码为：658231)
+* **相关博客理论部分**: [数据库设计——理论](https://wsxq2.55555.io/blog/2018/10/13/数据库设计-理论)
+* **相关博客实践部分**: [数据库设计——实践](https://wsxq2.55555.io/blog/2018/10/13/数据库设计-实践)
+
 ### 环境说明
 * `CentOS7`: `Linux`发行版之一，最大的优点是稳（所以主要用做服务器），最大的缺点是太稳了（更新贼慢，如php）
 * `mariadb 5.5.60`: 一个类似于`mysql`但完全开源的数据库
@@ -88,7 +93,6 @@
 ├── README.md* # 本文档
 ├── upload.sh* # 上传整个项目到服务器上投入实际应用的脚本
 └── useful.sql* # 学习过程一些有用的但不常见的 sql 语句
-
 ```
 
 ### 使用说明
@@ -147,10 +151,9 @@
       systemctl status mariadb
       systemctl start mariadb
       systemctl enable mariadb
-
       ```
 
-更多内容请参考我的博客：<https://wsxq2.55555.io/blog/2018/10/13/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/>
+更多内容请参考我的相关博客: [数据库设计——实践](https://wsxq2.55555.io/blog/2018/10/13/数据库设计-实践)
 
 
 
