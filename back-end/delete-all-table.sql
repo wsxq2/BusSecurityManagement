@@ -1,3 +1,4 @@
+-- delete-all-table.sql
 -- 在测试 C 语言前端程序时会用到该文件，因为需要删除所有的表再用C前端导入
 
 SET NAMES 'utf8';

@@ -1,4 +1,5 @@
-
+-- create-table.sql
+-- 创建所有表
 CREATE TABLE RenYuan
 (
 	gonghao              INTEGER NOT NULL,

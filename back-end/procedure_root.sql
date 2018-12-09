@@ -1,3 +1,5 @@
+-- procedure_root.sql
+-- 用于测试，将数据库中的某个表中的数据导出为 csv 文件，导出到 /var/lib/mysql/csv/ 目录下
 
 DELIMITER //
 

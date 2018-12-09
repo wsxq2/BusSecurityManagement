@@ -1,3 +1,5 @@
+-- create_database_and_user.sql
+-- 创建数据库和用户
 CREATE DATABASE IF NOT EXISTS bus CHARACTER
 SET = 'utf8';
 

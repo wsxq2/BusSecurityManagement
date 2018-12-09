@@ -1,4 +1,5 @@
-
+-- drop-all-table.sql
+-- 丢弃所有的表
 DROP TABLE IF EXISTS WeiZhang;
 DROP TABLE IF EXISTS CheLiang;
 DROP TABLE IF EXISTS LuDuiZhang;

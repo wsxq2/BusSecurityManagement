@@ -1,3 +1,6 @@
+-- procedure.sql
+-- 通过过程实现处理需求
+
 DELIMITER //
 --用户需求一：查询某个车队下的司机基本信息
 DROP PROCEDURE IF EXISTS get_siji_by_chedui //
