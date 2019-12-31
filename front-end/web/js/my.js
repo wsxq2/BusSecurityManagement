@@ -1,3 +1,7 @@
+/*
+ * js/my.js
+ * 主要包括函数 getTable（使用 ajax 根据一个参数获取查询的表的结果） 、 uq（配合 getTable 使用） 和 insert_data（根据一个参数表名来向表中插入数据）
+ */
 function getTable(str) {
 	xmlhttp = new XMLHttpRequest();
 	req="gettable.php?q="+str;
@@ -37,6 +41,8 @@ function getTable(str) {
 	xmlhttp.send();
 }
 getTable('wzxx');
+
+//useful query
 function uq(str){
 	switch (str) {
 		case '1':

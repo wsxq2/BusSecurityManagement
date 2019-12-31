@@ -1,21 +1,15 @@
 <!DOCTYPE html>
+<!--
+gettable.php
+根据参数 q 获取需要的表
+* wzxx: 最新违章信息
+* 1: 处理需求1
+* 2：处理需求2
+* 3：处理需求3
+-->
+
 <html>
 <head>
-<!--
-<style>
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-th {text-align: left;}
-</style>
--->
 </head>
 <body>
 
@@ -27,7 +21,6 @@ class TableRows extends RecursiveIteratorIterator {
     }
 
     function current() {
-        //return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
         return "<td>" . parent::current(). "</td>";
     }
 
@@ -41,7 +34,6 @@ class TableRows extends RecursiveIteratorIterator {
 }
 
 $q = intval($_GET['q']);
-//echo "<table style='border: solid 1px black;'>";
 echo "<table class='w3-table-all w3-hoverable'>";
 $servername = "localhost";
 $username = "wsxq";
@@ -54,7 +46,6 @@ try {
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	switch ($q) {
 	case 'wzxx':
-		//var_dump($table_fields);
 		echo "<thead style='font-weight:bold'><tr class='w3-light-grey'><td>ID</td><td>司机工号</td><td>司机姓名</td><td>车辆</td><td>违章类型</td><td>时间</td><td>站点</td></tr></thead>";
 		$stmt = $conn->prepare("SELECT ID,siji,xingming,cheliang,weizhangleixin,shijian,zhandian FROM WeiZhang,RenYuan WHERE WeiZhang.siji=RenYuan.gonghao ORDER BY shijian DESC;");
 		$stmt->execute();
@@ -71,7 +62,6 @@ try {
 		$stmt = $conn->prepare("CALL get_siji_by_chedui($cd)");
 		$stmt->execute();
 
-		// set the resulting array to associative
 		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 		foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
 			echo $v;
@@ -86,7 +76,6 @@ try {
 		$stmt = $conn->prepare("CALL get_weizhang_by_siji_and_datetime($sj,$dt1,$dt2)");
 		$stmt->execute();
 
-		// set the resulting array to associative
 		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 		foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
 			echo $v;
@@ -102,10 +91,8 @@ try {
 		$stmt = $conn->prepare("CALL get_weizhangtongji_by_chedui_and_datetime($cd,$dt1,$dt2)");
 		$stmt->execute();
 
-		// set the resulting array to associative
 		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 		$result=$stmt->fetchAll();
-		//var_dump($result);
 		foreach(new TableRows(new RecursiveArrayIterator($result)) as $k=>$v) {
 			echo $v;
 		}

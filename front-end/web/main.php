@@ -1,3 +1,7 @@
+<!--
+main.php
+登陆后进入的页面，即主页面
+-->
 
 <?php
 session_start();
@@ -10,9 +14,6 @@ if( !isset($_SESSION['uname']) ){
 <title>公交安全管理系统</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css"> -->
-<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=roboto"> -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <style>
 
 body {font-family: "Roboto", sans-serif}

@@ -15,10 +15,6 @@
 #define MAX_NAME_LENTH 30
 void finish_with_error(MYSQL* con) {
   fprintf(stderr, "%s\n", mysql_error(con));
-  // char temp[6];
-  // sprintf(temp, "%d", mysql_errno(con));
-  // perror(temp);
-  // mysql_close(con);
   exit(1);
 }
 

@@ -1,5 +1,9 @@
+<!--
+login.php
+用于登陆验证
+-->
+
 <?php
-// Start the session
 session_start();
 ?>
 

@@ -1,3 +1,8 @@
+<!--
+insertdata.php
+根据表单的参数 table_name （一个隐藏的 input 标签）选择要向其中插入数据的表，并插入数据
+-->
+
 <?php
 $servername = "localhost";
 $username = "wsxq";
