@@ -1,6 +1,6 @@
 ## 公交安全管理系统
 * **GitHub**: <https://github.com/wsxq2/BusSecurityManagement>
-* **Web前端**: <http://wsxq21.55555.io:8080/> (用户名为：`admin`，密码为：`658231`)
+* **Web前端**: <https://gj.wsxq2.xyz/> (用户名为：`admin`，密码为：`658231`)
 * **相关博客理论部分**: [数据库设计——理论](https://wsxq2.55555.io/blog/2018/10/13/数据库设计-理论)
 * **相关博客实践部分**: [数据库设计——实践](https://wsxq2.55555.io/blog/2018/10/13/数据库设计-实践)
 
