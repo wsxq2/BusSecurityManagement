@@ -3,7 +3,7 @@
 CREATE DATABASE IF NOT EXISTS bus CHARACTER
 SET = 'utf8';
 
-DROP USER 'wsxq'@'%';
+--DROP USER 'wsxq'@'%';
 
 CREATE USER 'wsxq'@'%' IDENTIFIED BY '658231';
 
